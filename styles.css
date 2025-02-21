@@ -32,6 +32,8 @@ main {
 
 	.features h2 {
 		color: #6200ee;
+		font-size: 2em;
+		text-align: center;
 	}
 
 	.features ul {
@@ -45,6 +47,8 @@ main {
 		padding: 10px;
 		border-radius: 5px;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		font-size: 1.2em;
+		text-align: center;
 	}
 
 .download {
@@ -68,10 +72,22 @@ main {
 
 footer {
 	text-align: center;
-	padding: 10px;
-	background-color: #333;
-	color: white;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
 }
+
+	footer h1 {
+		padding: 10px;
+		background-color: #333;
+		color: white;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
+
+	footer p {
+		padding: 7px;
+		background-color: #333;
+		color: white;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}

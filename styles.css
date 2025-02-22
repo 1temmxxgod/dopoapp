@@ -26,6 +26,25 @@ main {
     padding: 17px;
 }
 
+.download {
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #6200ee;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+    .download-button:hover {
+        background-color: #3700b3;
+    }
+
 .features {
     margin-bottom: 40px;
 }
@@ -49,25 +68,6 @@ main {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         font-size: 0.8em;
         text-align: center;
-    }
-
-.download {
-    text-align: left;
-}
-
-.download-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #6200ee;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 0.9em;
-    transition: background-color 0.3s;
-}
-
-    .download-button:hover {
-        background-color: #3700b3;
     }
 
 footer {

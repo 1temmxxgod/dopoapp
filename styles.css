@@ -77,14 +77,14 @@ footer {
 }
 
 	footer h1 {
-		padding: 4px;
+		padding: 6px;
 		position: fixed;
 		bottom: 0;
 		width: 100%;
 	}
 
 	footer p {
-		padding: 3px;
+		padding: 5px;
 		position: fixed;
 		bottom: 0;
 		width: 100%;

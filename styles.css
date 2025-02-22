@@ -71,13 +71,13 @@ main {
 	}
 
 footer {
-	color: white;
+	background-color: #333;
 }
 
 	footer h1 {
 		text-align: center;
 		padding: 6px;
-		background-color: #333;
+		color: white;
 		position: fixed;
 		bottom: 0;
 		width: 100%;
@@ -86,7 +86,7 @@ footer {
 	footer p {
 		text-align: right;
 		padding: 5px;
-		background-color: #333;
+		color: white;
 		position: fixed;
 		bottom: 0;
 		width: 100%;

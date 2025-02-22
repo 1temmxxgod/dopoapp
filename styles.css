@@ -1,3 +1,4 @@
+/* Общие стили */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -10,17 +11,17 @@ body {
 header {
     background-color: #6200ee;
     color: white;
-    padding: 40px 20px;
+    padding: 20px;
     text-align: center;
 }
 
     header h1 {
         margin: 0;
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     header p {
-        font-size: 1.2em;
+        font-size: 1em;
         margin: 10px 0 0;
     }
 
@@ -30,17 +31,17 @@ main {
 
 .download {
     text-align: center;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .download-button {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 12px 24px;
     background-color: #6200ee;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.1em;
+    font-size: 1em;
     transition: background-color 0.3s;
 }
 
@@ -49,14 +50,14 @@ main {
     }
 
 .features {
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
     .features h2 {
         color: #6200ee;
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .features ul {
@@ -65,37 +66,37 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        gap: 15px;
     }
 
     .features li {
         background-color: white;
         margin: 10px 0;
-        padding: 20px;
+        padding: 15px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        flex: 1 1 calc(33.333% - 40px);
-        max-width: 300px;
+        flex: 1 1 calc(100% - 30px);
+        max-width: 100%;
         text-align: center;
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
 .media {
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
     .media h2 {
         color: #6200ee;
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
 .media-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .media-item {
@@ -103,8 +104,8 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    flex: 1 1 calc(33.333% - 40px);
-    max-width: 300px;
+    flex: 1 1 calc(100% - 30px);
+    max-width: 100%;
 }
 
     .media-item img {
@@ -116,7 +117,7 @@ main {
 footer {
     background-color: #333;
     color: white;
-    padding: 40px 20px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -130,20 +131,21 @@ footer {
 }
 
 .footer-section {
-    flex: 1 1 calc(33.333% - 40px);
-    max-width: 300px;
-    text-align: left;
+    flex: 1 1 calc(100% - 40px);
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
     .footer-section h3 {
-        font-size: 1.5em;
-        margin-bottom: 15px;
+        font-size: 1.2em;
+        margin-bottom: 10px;
     }
 
     .footer-section p, .footer-section ul {
         margin: 0;
         padding: 0;
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     .footer-section ul {
@@ -168,4 +170,71 @@ footer {
     margin-top: 20px;
     font-size: 0.8em;
     opacity: 0.8;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .download-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .features h2, .media h2 {
+        font-size: 1.3em;
+    }
+
+    .features li {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.8em;
+    }
+
+    .download-button {
+        padding: 8px 16px;
+        font-size: 0.8em;
+    }
+
+    .features h2, .media h2 {
+        font-size: 1.2em;
+    }
+
+    .features li {
+        padding: 8px;
+        font-size: 0.7em;
+    }
+
+    .footer-section h3 {
+        font-size: 1em;
+    }
+
+    .footer-section p, .footer-section ul {
+        font-size: 0.7em;
+    }
 }
